@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Christopher Klix</title>
+
+    <script defer src="/__/firebase/6.3.0/firebase-app.js"></script>
+    <script defer src="/__/firebase/6.3.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/6.3.0/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/6.3.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/6.3.0/firebase-storage.js"></script>
+    <script defer src="/__/firebase/init.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script defer src="js/jquery-extensions.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script defer src="js/scroll.js"></script>
+    <script defer src="js/blog_intro.js"></script>
+    <script defer src="js/site_preloader.js"></script>
+    <script src="https://kit.fontawesome.com/01e5b0e921.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+  <body>
+
+    <a id="back-to-top" href="#hero"><i class="fas fa-arrow-up"></i> Back to top</a>
+
+    <div id="menu">
+
+      <div id="menu-mobile-icon" class="mobile-menu-closed">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <div id="menu-logo">
+        <!--<img src="" alt="Logo">-->
+        <a href="#hero">Christopher Klix</a>
+      </div>
+
+      <div id="menu-items">
+        <!--<a class="menu-item" href="#card-1">Real Estate</a>-->
+        <a class="menu-item" href="#card-2">About Me</a>
+        <a class="menu-item" href="#card-3"><span>&#x1F3A7 Generation Space</span>-Podcast</a>
+        <a class="menu-item" href="#card-5">Lambda</a>
+        <a class="menu-item" href="#card-6">Contact</a>
+      </div>
+      
+    </div>
+
+    <div id="mobile-menu">
+      <div id="mobile-menu-items">
+          <a class="menu-item" href="#card-1">Real Estate</a>
+          <a class="menu-item" href="#card-2">About Me</a>
+          <a class="menu-item" href="#card-3">Generation Space-Blog</a>
+          <a class="menu-item" href="#card-5">Media & Press</a>
+          <a class="menu-item" href="#card-6">Contact</a>
+      </div>
+    </div>
+
+    <div id="site-preloader-overlay">
+      <div>
+          <h1 class="text-center">
+            <span id="site-preloader-h1-1" class="h1-1">Christopher</span><br>
+            <span id="site-preloader-h1-2" class="h1-2">Klix</span>
+          </h1>
+          <p id="site-preloader-p">
+            Welcome
+          </p>
+        </div>    
+    </div>
+
+    <div id="blog-intro-overlay">
+      <div>
+        <h1 class="text-center">
+          <span class="h1-1">Generation</span><br>
+          <span class="h1-2">Space</span>
+        </h1>
+        <p id="blog-intro-p">
+          Loading...
+        </p>
+      </div>
+    </div>
+
+    <div id="hero"></div>
+
+
+    <div id="cards-grid">
+
+      <div id="card-3" class="card generation-space-card">
+
+        <div class="col-1 row-1">
+          <img src="img/portrait_mars.jpg" alt="Christopher Klix">
+        </div>
+
+        <div class="col-2 row-1">
+          <h1>
+            <span class="h1-1">Generation</span><br>
+            <span class="h1-2">Space</span>
+          </h1>
+          <p>
+            Society has evolved since the earliest days of humanity. Over the Roman Empire, to Medieval castles, to the industrial revolution. Introducing electricity kickstarted society in the age of digital computation. Our homes became smarter and automation improved the quality of living. Now we conquered Mars and started to settle on this new planet. Who would have thought how through this the concept of living in a home would change forever.
+          </p>
+          <p>
+            - Marsian, 2056
+          </p>
+          <button id="blog-btn"type="button" onclick="blogIntro()" class="btn-margin">Listen to the Podcast</button>
+        </div>
+
+      </div>
+
+      <div id="card-4" class="card youtube-lambda-card">
+
+        <div class="col-full row-1">
+          <h1>
+            <span class="h1-1">YouTube</span><br>
+            <span class="h1-2">Lamda</span>
+          </h1>
+          <p>
+            Exploring the world's most fascanating phenoma in math, physics and CS.
+          </p>
+          <br>
+        </div>
+
+        <div class="col-full row-2">
+          <p>
+            # TODO
+          </p>
+        </div>
+        <div class="col-full row-3 text-center">
+          <h2>
+            # TODO
+          </h2>
+        </div>
+        <div class="col-full row-4">
+          <h1 class="text-right">
+            <span class="h1-1"># TODO</span><br>
+            <span class="h1-2"># TODO</span>
+          </h1>
+        </div>
+
+        <div class="col-full row-5">
+          <p class="first-p">
+            # TODO
+          </p>
+        </div>
+
+
+      </div>
+
+      <div id="card-1" class="card christopher-klix-card">
+        <div class="col-full row-1">
+            <h1>Christopher Klix</h1>
+            <p>Check out the Generation Space Podcast!</p>
+        </div>
+        <div class="col-1 row-2 city-of-london">
+            <a class="a-img" href="https://github.com/ChristopherKlix/" target="_blank"><img src="img/coding.jpg" alt="Coding"></a>
+            <h2>Coding</h2>
+        </div>
+        <div class="col-2 row-2 city-of-westminster">
+            <a class="a-img" href="#"><img src="img/piano.jpg" alt="Musician"></a>
+            <h2>Musician</h2>
+        </div>
+        <div class="col-3 row-2 tower-hamlets">
+            <a class="a-img" href="#card-3"><img src="img/portrait_mars.jpg" alt="Podcast"></a>
+            <h2>Podcast</h2>
+        </div>
+        <div class="col-4 row-2 street-corner">
+            <a class="a-img" href="#card-4"><img src="img/logo.png" alt="YouTube"></a>
+            <h2>YouTube</h2>
+        </div>
+        <div class="col-full row-3">
+          <h3>Get in touch!</h3>
+          <h4>
+            <a class="a-email" href="https://github.com/ChristopherKlix/" target="_blank">GitHub</a>
+            |
+            <a class="a-email" href="https://twitter.com/christopherklix/">Twitter</a>
+          </h4>
+        </div>
+        
+      </div>
+
+      <div id="card-2" class="card about-me-card">
+
+        <div class="col-1 row-1">
+          <img src="img/portrait_beach_bw_2x.jpg" alt="">
+        </div>
+
+        <div class="col-2 row-1">
+          <h1>
+            <span class="h1-1">About</span><br>
+            <span class="h1-2">Me</span>
+          </h1>
+          <p>
+            Hi, my name is Chris.
+            As you probably just clicked on 'About me' or you just scrolled here
+            by accident and started reading, I guess you are interested in my person.
+            And I appreciate that!
+          </p>
+          <p>
+            I am 25 years young and I live on the beautiful planet Earth.
+            Right next to Alpha Centauri, Earth is part of an 8 planet solar system with one
+            sun that will be around for about another 5 billion years and then turn into
+            a red giant.
+            I moved here because of the variety in society that can be found in this place.
+            But also the appreciation of innovative and new tech made me realize
+            that this is my planet, my home.
+          </p>
+          <p>
+            But I recently heard about Proxima Centauri b. Very interesting...
+          </p>
+          <p>
+            A few weeks ago, I started a new podcast called 'Generation Space'.
+            I am very interested in tech and physics, so when everybody else is watching the Super Bowl, I am watching the livestream
+            of SpaceX showing their latest launch of incredible human engineering talent.
+            Others might call it Falcon 9, Heavy or our recent accomplishment the Starship (BFR).<br>
+            Oh, and go Rams!!!
+          </p>
+          <hr class="hr-p">
+          <p>
+            Based on some subtle hints on this site you might have also figured out
+            that I am a bit into Computer Science.
+            Actually, I am London's #1 agent for Smart Homes.
+          </p>
+        </div>
+
+        <div class="col-full row-2">
+            <p>
+              # TODO
+            </p>
+            <!--<button class="btn-margin">Download my CV</button>-->
+        </div>
+
+        <div class="col-full row-3">
+          <a href="#"><i class="fab fa-instagram fa-4x"></i></a>
+          <a href="#"><i class="fab fa-twitter-square fa-4x"></i></a>
+          <a href="#"><i class="fab fa-github fa-4x"></i></a>
+          <a href="#"><i class="fab fa-youtube fa-4x"></i></a>
+        </div>
+
+      </div>
+
+      <div id="card-6" class="card contact-card">
+        <div class="col-full row-1">
+            <h1>Contact</h1>
+            <p>If you still don't know how to contact me, see below.</p>
+        </div>
+        <div class="col-1 row-2">
+          <h2>Social Media</h2>
+          <p>Find me as @ChristopherKlix</p>
+          <p>On Instagram, Twitter, YouTube...</p>
+        </div>
+        <div class="col-2 row-2">
+          <h2>Personal Contact</h2>
+          <p>Email</p>
+          <p><a href="mailto:chris.k@christopherklix.com">Contact through GitHub</a></p>
+          <p>Phone</p>
+          <p><a href="">DM on Twitter</a></p>
+        </div>
+
+        <div class="col-3 row-2">
+          <h2>Office</h2>
+          <p>WeWork London</p>
+        </div>
+    
+      </div>
+
+      <div id="card-5" class="card media-press-card">
+        <div class="col-1 row-1">
+          <i class="far fa-newspaper fa-4x"></i>
+        </div>
+        <div class="col-2 row-1 text-right">
+            <h1>Media & Press</h1>
+            <p>Everything related to media and press.</p>
+            <p>For any specific inquiries please contact me directly via email.</p>
+            <p><a class="a-email" href="mailto:media.press@christopherklix.com">media.press@christopherklix.com</a></p>
+        </div>
+        <div class="col-2 row-2 text-right">
+          <h2>Image & video usage rights</h2>
+          <p>All media available on this site and on all related
+            social media may be used with the Creative-Common-License for any informative purposes,
+            such as news and magazine articles.
+            If you are unsure about the way of use, feel free to contact us for further information.
+            <b>Note that it is prohibited to use images of Christopher Klix or images that show the company
+            to intentionally harm named.</b>
+          </p>
+        </div>
+      </div>
+  
+
+    </div>
+
+    <p id="load">Firebase SDK Loading&hellip;</p>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+
+      $.getScript('./js/scroll.js', function() { 
+        initScroll();
+      });
+    </script>
+
+  </body>
+</html>

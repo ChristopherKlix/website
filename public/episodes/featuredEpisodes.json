@@ -1,0 +1,39 @@
+{
+    "episodes": [
+        {
+            "epNumber": 0,
+            "epTitle": "",
+            "epSubtitle": "",
+            "epHash": "",
+            "epDate": ""
+        },
+        {
+            "epNumber": 1,
+            "epTitle": "Generation Space",
+            "epSubtitle": "",
+            "epHash": ["#generation", "#space", "#mars"],
+            "epDate": "16th July 2019"
+        },
+        {
+            "epNumber": 2,
+            "epTitle": "FOREST CITY",
+            "epSubtitle": "Malaysia's latest US$41bn project",
+            "epHash": ["#architecture", "#smartcity", "#smarthome"],
+            "epDate": "17th July 2019"
+        },
+        {
+            "epNumber": 3,
+            "epTitle": "New Episode",
+            "epSubtitle": "Another Subtitle",
+            "epHash": ["#tag", "#city", "#awesome"],
+            "epDate": "18th July 2019"
+        },
+        {
+            "epNumber": 4,
+            "epTitle": "Another Episode",
+            "epSubtitle": "",
+            "epHash": ["#another", "#episode"],
+            "epDate": "19th July 2019"
+        }
+    ]
+}
