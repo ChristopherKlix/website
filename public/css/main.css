@@ -354,7 +354,6 @@ button.btn-margin {
 #hero {
   position: relative;
   top: 60px;
-  width: 100vw;
   height: 500px;
   background-image: url("../img/space.jpg");
   background-position: center;
@@ -366,7 +365,7 @@ button.btn-margin {
 
 #cards-grid {
   position: relative;
-  top: -100px;
+  top: -10rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 70% 1fr;

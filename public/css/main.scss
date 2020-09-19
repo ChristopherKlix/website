@@ -322,7 +322,7 @@ button {
 #hero {
     position: relative;
     top: 60px;
-    width: 100vw;
+    //width: 100vw;
     height: 500px;
     background-image: url("../img/space.jpg");
     background-position: center;
@@ -333,7 +333,7 @@ button {
 
 #cards-grid {
     position: relative;
-    top: -100px;
+    top: -10rem;
     display: grid;
     grid-template-columns: 1fr 70% 1fr;
 }
