@@ -1,29 +1,27 @@
 /*
-$(function() {
-    //var menuHeight = $('#menu').height();
-    console.log('e.preventDefault()');
-    
 
-    $('a').click(function (e) {
-        e.preventDefault();
-        var target = $(this.hash);
-        
-        $('html, body').animate({
-            scrollTop: target.offset().top - 60 - 60
-        }, 700, 'easeInOutCubic');
-        return false;
-    });
-});
+
+    SCROLL ANIMATION
+
+    animates scrolling when user clicks on a menu item
+
+
 */
 
-function initScroll() {
-    console.log('initScroll() called...');
-    
 
+
+/* EVENT LISTENER FOR MENU ITEMS */
+
+function initScroll() {
+    // get reference to menu items
     $('.menu-item').click(function (e) {
+        // prevent default <a> behaviour
         e.preventDefault();
+
+        // set target for <a>
         var target = $(this.hash);
         
+        // animate scrolling
         $('html, body').animate({
             scrollTop: target.offset().top - 60 - 60
         }, 700, 'easeInOutCubic');
@@ -31,7 +29,13 @@ function initScroll() {
     });
 }
 
+/* END */
+
+/* NO IDEA WHAT THAT DOES */
 jQuery.easing['jswing'] = jQuery.easing['swing'];
+/* END */
+
+/* EXTENDING EASING FUNCTIONS */
 
 jQuery.extend( jQuery.easing,
 {
