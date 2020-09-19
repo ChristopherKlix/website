@@ -923,7 +923,9 @@ button.btn-margin {
     padding: 24px;
   }
   .youtube-lambda-card {
-    display: none;
+    height: auto;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
   }
   .media-press-card {
     -ms-grid-columns: auto;

@@ -809,7 +809,8 @@ button {
     }
 
     .youtube-lambda-card {
-        display: none;
+        height: auto;
+        grid-template-columns: auto;
     }
 
     .media-press-card {
