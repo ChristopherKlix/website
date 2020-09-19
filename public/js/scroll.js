@@ -20,7 +20,7 @@ function initScroll() {
     console.log('initScroll() called...');
     
 
-    $('a').click(function (e) {
+    $('.menu-item').click(function (e) {
         e.preventDefault();
         var target = $(this.hash);
         

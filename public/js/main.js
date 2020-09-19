@@ -1,8 +1,9 @@
 let viewportWidth = $(window).width();
 
+// change content for mobile
 if (viewportWidth <= 600) {
     const blogBtnObj = $('#blog-btn');
-    blogBtnObj.html('Only on desktop')
+    //blogBtnObj.html('Only on desktop')
 };
 
 const backToTopBtn = $('#back-to-top');
