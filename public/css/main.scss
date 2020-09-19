@@ -5,25 +5,24 @@ $menuItemBcHover: #202020;
 $menuItemFontHover: #fff;
 $lightGrey: #ECEFF1;
 $cardBc: #fff;
+$dark: #202020;
 
 * {
     margin: 0;
     transition-duration: .3s;
-    //scroll-behavior: smooth;
 
     ::selection {
-        background: #5dd368;
+        background: $primaryColor;
         color: #fff;
       }
 }
 
-@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
 @import url("https://use.typekit.net/gyw4fwa.css");
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 body {
     background: #fff;
-    color: rgba(0,0,0,0.87);
+    color: rgb(33, 33, 33);
     font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -36,7 +35,7 @@ h1 {
 }
 
 .h1-1 {
-    color: #202020;
+    color: $dark;
 }
 
 .h1-2 {
@@ -71,7 +70,7 @@ a {
     }
     
     &:hover {
-        color: #5dd368;
+        color: $primaryColor;
         padding-bottom: 0.5rem;
     }
 }
@@ -79,7 +78,7 @@ a {
 button {
     -webkit-appearance: none;
     background-color: #fff;
-    border: solid 2px #202020;
+    border: solid 2px $dark;
     border-radius: 60px;
     text-transform: uppercase;
     font-size: 1em;
@@ -88,7 +87,7 @@ button {
     cursor: pointer;
 
     &:hover {
-        background-color: #202020;
+        background-color: $dark;
         color: #fff;
     }
 
@@ -173,7 +172,7 @@ button {
     position: fixed;
     bottom: 24px;
     right: 24px;
-    background-color: #202020;
+    background-color: $dark;
     border-radius: 24px;
     line-height: 1em;
     color: #fff;
@@ -239,7 +238,7 @@ button {
             }
     
             &:hover {
-                border: solid #202020;
+                border: solid $dark;
                 border-width: 0 0 2px 0;
             }
         }
@@ -426,7 +425,7 @@ button {
             justify-self: center;
             align-self: center;
             margin: 24px;
-            color: #202020;
+            color: $dark;
             transition-duration: .1s;
 
             &:nth-child(1):hover {
@@ -497,7 +496,7 @@ button {
         width: 200px;
         height: 2px;
         border: none;
-        background-color: #202020;
+        background-color: $dark;
         margin: 12px auto;
     }
 }
@@ -514,7 +513,7 @@ button {
 }
 
 .contact-card {
-    background-color: #202020;
+    background-color: $dark;
     color: #fff;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -635,7 +634,7 @@ button {
             display: block;
 
             i {
-                color: #202020;
+                color: $dark;
                 font-size: 24px;
                 padding: 18px;
             }
